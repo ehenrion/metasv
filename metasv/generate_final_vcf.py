@@ -610,8 +610,8 @@ def convert_metasv_bed_to_vcf(bedfile=None, vcf_out=None, workdir=None,
         contigs = fasta_utils.get_contigs(reference)
         contigs_order_dict = {contig.name: index for (index, contig) in
                               enumerate(contigs)}
-        vcf_template_reader.contigs = OrderedDict(
-            [(contig.name, (contig.name, contig.length)) for contig in contigs])
+        #vcf_template_reader.contigs = OrderedDict(
+        #    [(contig.name, (contig.name, contig.length)) for contig in contigs])
         vcf_template_reader.metadata["reference"] = reference
         fasta_file = pysam.Fastafile(reference)
 
