@@ -78,7 +78,7 @@ def run_metasv(args):
                      ("BreakDancer", args.breakdancer_vcf),
                      ("BreakSeq", args.breakseq_vcf), ("HaplotypeCaller", args.gatk_vcf),
                      ("Lumpy", args.lumpy_vcf), ("Manta", args.manta_vcf), ("CNVkit", args.cnvkit_vcf),
-                     ("WHAM", args.wham_vcf), "Delly", args.delly_vcf]
+                     ("WHAM", args.wham_vcf), ("Delly", args.delly_vcf)]
     native_name_list = [("CNVnator", args.cnvnator_native, CNVnatorReader),
                         ("Pindel", args.pindel_native, PindelReader),
                         ("BreakSeq", args.breakseq_native, BreakSeqReader),
