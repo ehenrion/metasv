@@ -34,6 +34,8 @@ if __name__ == "__main__":
                               default=[])
     input_parser.add_argument("--lumpy_vcf", nargs="+", help="VCF file or dir for Lumpy VCFs",
                               default=[])
+    input_parser.add_argument("--delly_vcf", nargs="+", help="VCF file or dir for Delly VCFs",
+                              default=[])
     input_parser.add_argument("--cnvkit_vcf", nargs="+", help="VCF file or dir for CNVkit VCFs",
                               default=[])
     input_parser.add_argument("--wham_vcf", nargs="+", help="VCF file or dir for WHAM VCFs",
